@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 300px;
+            height: 300px;
+            border-collapse: separate;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /* Alinhamento horizontal do elemento dentro da caixa (center, left and right)*/
+            vertical-align: top; /* Alinhamento vertical do elemento dentro da caixa (top, bottom and middle) */
+            background-color: aquamarine;
+        }
+        .numero{
+            text-align: right;
+        }                           /* Exemplificado a possibilidade de se trabalhar com class em tabelas*/
+        .numero2{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        Hierarquia de Tabelas (Simples)
+            Table = tabela
+                Table Row = linha de tabela
+                Table Data = dado de tabela
+    -->
+    
+    <table>
+        <tr> <!-- Primeira linha -->
+        <!-- Dados da tabela -->
+            <td>A1</td> 
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr> <!-- Segunda linha-->
+            <!--Dados da tabela-->
+            <td class="numero2">A2</td>
+            <td>B2</td>
+            <td >C2</td>
+            <td class="numero">D2</td>
+        </tr>
+        <tr> <!-- Terceira linha-->
+            <!-- Dados da tabela-->
+            <td class="numero2">A3</td>
+            <td>B3</td>
+            <td >C3</td>
+            <td class="numero">D3</td>
+        </tr>
+        <tr> <!-- Quarta linha-->
+            <!-- Dados da tabela-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+
+        </tr>
+        
+    </table>
+</body>
+</html>
